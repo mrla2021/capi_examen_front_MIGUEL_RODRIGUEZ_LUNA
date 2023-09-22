@@ -1,0 +1,21 @@
+
+<table class="table table-success table-striped">
+    <thead >
+        <tr>
+      
+            <td class="col-3">Nombre</td>
+            <td class="col-4">Fecha de nacimiento</td>
+            <td class="col-2"> Edad</td>
+            <td class="col-3">Dirección</td>
+          </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of usuarios ">
+      
+            <td>{{item.name}}</td>
+            <td>{{item.fecha_nacimiento}}</td>
+            <td>{{item.edad}}</td>
+            <td>{{item.domicilio}} Número exterior: {{item.numero_exterior}} Colonia: {{item.colonia}} cp: {{item.cp}} Ciudad: {{item.ciudad}} Fecha de nacimiento: {{item.fecha_nacimiento}}</td>
+          </tr>
+    </tbody>
+  </table>
